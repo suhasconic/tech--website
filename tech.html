@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH </title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+    <header class="glow" >
+        
+        TECH REVIEWS
+        <link rel="stylesheet" href="style.css">
+
+    </header>
+    <!---IMAGE SLIDERS-->
+    <div class = "slideshow-container">
+        <div class = "mySlides fade">
+            <div class = "numbertext">1/3</div>
+            <img src="images/E4PD4Z8VoAMZKtn.jpg" style="width=100%">
+            <div class="="text"></div>
+
+        </div>
+        <div class = "mySlides fade">
+            <div class = "numbertext"></div>
+            <img src="images/E4OqmtRVUAQzj6q (1).jpg" width="100%" height="350px">
+            <div class="="text"></div>
+
+        </div>
+        <div class = "mySlides fade">
+          <div class = "numbertext"></div>
+          <img src="images/E4OfYd9VIAEx0Gn.jpg" width="100%" height="350px">
+          <div class="="text"></div>
+
+      </div>
+      <div class = "mySlides fade">
+        <div class = "numbertext"></div>
+        <img src="images/E4J71oNVoAITGQV (1).jpg" width="100%" height="350px">
+        <div class="="text"></div>
+
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <!---main content-->
+
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+          <li ><a href="mobile.html">mobile</a> </li>
+          <li><a href="mobile.html">APPLE PRODUCTS</a></li>
+          <li><a href="mobile.html">DESKTOPS</a></li>
+          <li><a href="mobile.html">COPARSION</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-6">
+          <h1>AROUND TECH TALKS</h1>
+          <h2>Microsoft</h2>
+          
+          <p>Registration for #MSInspire is now live! We're excited to connect with our #MSPartner Network for this virtual event from July 14-15, 2021. Star-struckParty popper</p>
+        
+            <h2>Redmi India</h2>
+            <p>The 'S' legacy is back with #RedmiNote10S! #SavagePerformance + #StunningCamera = 
+                @MediaTek
+                 Helio G95 HyperEngine Game Technology + #64MP (2nd highest in town) + 5000mAh battery!
+                
+                Grab it on: May 18th, 12 NOON 
+                For: 6+64GB - ₹14999 + 6+128GB - ₹15999
+                At: http://bit.ly/Note10Ssale
+                </p>
+                <img src="images/E4J71oNVoAITGQV.jpg">
+                
+            <h3>samsung </h3>
+            <p>EXCLUSIVE: Samsung Begins Mass Production for Galaxy Z Fold 3 & Z Flip 3 – Ordering 50,000+ Units a Day in Prep for August 3 Event</p>
+            <img src="images/flippyboi3.jpg" width="500">
+            <h3>google pexel</h3>   
+            <p><img src="images/pixel6listing-1536x864.jpg"width="500"></p>
+        </div>
+      
+        <div class="col-3 right">
+          <div class="aside">
+            <div class="ticker-wrap">
+              <marquee direction="up">
+              <ul>
+                <h5>LATEST NEWS</h5>
+                <li>ROG Phone 3 – July 22</li>
+                <li>Realme C11 – July 14</li>
+                <li>OnePlus Nord – July 21</li>
+                <li>Poco M2 Pro [launched]</li>
+                <li>Vivo X50 series</li>
+            
+
+              </ul>
+            </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+</body>
+</html>
